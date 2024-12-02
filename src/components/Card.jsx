@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Card = ({ownerName,contact,address,imageUrl,rent,location}) => {
@@ -16,7 +17,7 @@ const Card = ({ownerName,contact,address,imageUrl,rent,location}) => {
       <p><i className="fa-solid fa-location-dot " style={{marginRight:5}}></i>{address}</p>
       <div className="priceAndLocation">
         <p>Rent:Rs.{rent}</p>
-      <button>See Location</button>
+      <Link to={`/location/${encodeURIComponent(address)}/${location.latitude}/${location.longitude}`}>See Location</Link>
       </div>
     </div>
   </div>

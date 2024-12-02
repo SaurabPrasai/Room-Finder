@@ -82,7 +82,7 @@ body{
   margin: 10px 0;
 }
 
-.priceAndLocation  button {
+.priceAndLocation  a {
   display: inline-flex;
   padding: 8px 16px;
   font-size: 0.875rem;
@@ -185,7 +185,13 @@ form button{
    
   }
   form{
-    min-width: 300px;
+    min-width: 280px;
   }
-  
+ 
+}
+
+.leaflet-container {
+  width: 80vw;
+  height: 80vh;
+  margin: 20px auto;
 }

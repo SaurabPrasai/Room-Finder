@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter,Route,Routes} from "react-router-dom"
 import AddRoom from "./pages/AddRoom";
 import Home from "./pages/Home";
+import Location from "./pages/Location";
 
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
     <Routes>
    <Route path="/" element={<Home/>}/>
    <Route path="/add-room" element={<AddRoom/>}/>
-   {/* <Route path={`/location/:address/:lat/:lon`} element={<Location/>}/> */}
+   <Route path={`/location/:address/:lat/:lon`} element={<Location/>}/>
 
     </Routes>
     
