@@ -12,8 +12,7 @@ export default function Location() {
   });
 
   return (
-    <div className="App">
-      <h1 style={{margin:"6rem 0",textAlign:"center"}}>{address}</h1>
+    <div >
       <Map coords={coords}  display_name={decodedAddress}/>
     </div>
   );
