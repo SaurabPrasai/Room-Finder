@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #FBFBFB;
+  min-height: 100vh;
+  font-family: "Raleway", serif;
+  color: #333;
+}
+.headerDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 6rem 0;
+}
+
+.heading{
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.addRoomBtn{
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2563eb;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.mainDiv{
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ width: 80%;
+ margin: 0 auto ;
+ gap: 50px;
+}
+
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card .content {
+  padding: 20px;
+}
+
+.card .content h5 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.card .content p {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  color: #4b5563;
+  margin: 10px 0;
+}
+
+.priceAndLocation  button {
+  display: inline-flex;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2563eb;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.card .content button:hover {
+  background-color: #1d4ed8;
+}
+
+.priceAndLocation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+
+/* add room */
+.warning{
+  margin:3rem auto;
+  font-weight: bold;
+  max-width: 70%;
+text-align: center;
+font-size: 20px;
+
+}
+.formDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  gap: 15px;
+}
+form>div{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+form>div>label{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form input{
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+
+}
+
+form button{
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2563eb;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.error{
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+ margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .heading{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+  }
+  .headerDiv{
+    margin: 2rem 0;
+  }
+  .mainDiv{
+  
+
+  }
+  .card {
+   
+  }
+  form{
+    min-width: 300px;
+  }
+  
+}
